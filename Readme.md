@@ -71,14 +71,55 @@ docker exec -it <container_id_or_name> <command>
 
 ## Docker Compose
 
-Start services:
+Start services: For single docker-compose.yaml file
 ```
 docker-compose up -d
+```
+
+Start services: For multiple docker-compose.yaml files in one parent folder
+```
+docker-compose -f <selected_docker_compose_yml_file> up -d
 ```
 
 Stop services:
 ```
 docker-compose down
+```
+
+Stop services: For multiple docker-compose.yaml files in one parent folder
+```
+docker-compose -f <selected_docker_compose_yml_file> down
+```
+
+Start container:
+```
+docker-compose start
+```
+
+Start container: For multiple docker-compose.yaml files in one parent folder
+```
+docker-compose -f <selected_docker_compose_yml_file> start
+
+```
+
+Stop container:
+```
+docker-compose stop
+```
+
+Stop container: For multiple docker-compose.yaml files in one parent folder
+```
+docker-compose -f <selected_docker_compose_yml_file> stop
+```
+
+Restart services:
+```
+docker-compose restart
+```
+
+Restart services: For multiple docker-compose.yaml files in one parent folder
+```
+docker-compose -f <selected_docker_compose_yml_file> restart
 ```
 
 View logs of services:
