@@ -178,3 +178,12 @@ Remove a volume:
 ```
 docker volume rm <volume_name>
 ```
+
+Remove multiple volume at the same time:
+```
+docker volume rm $(docker volume ls -q)
+```
+ or
+```
+docker volume rm $(docker volume ls -qf dangling=true)
+```
