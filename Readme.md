@@ -29,10 +29,11 @@ Run a container:
 docker run [OPTIONS] <image_name>:<tag>
 ```
 Common options:
-  -d            Run in detached mode
-  -p <host_port>:<container_port>   Port mapping
-  --name <container_name>           Assign a name to the container
-  -v <host_path>:<container_path>   Volume mapping
+
+  01. -d =                              Run in detached mode
+  02. -p <host_port>:<container_port> = Port mapping
+  03. --name <container_name> =         Assign a name to the container
+  04. -v <host_path>:<container_path> = Volume mapping
 
 List running containers:
 ```
