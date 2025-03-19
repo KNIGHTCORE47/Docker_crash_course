@@ -1,0 +1,18 @@
+# Docker
+
+# NOTE - Docker Run [Terminal Command]
+
+ - If image exists run that image, if not pull and run
+
+# docker run <image-name>
+
+# docker run -p <port>:<port> -it <image-name>
+
+
+
+
+# NOTE - Docker Pull [Terminal Command]
+
+ - Only pull the image from Docker Hub
+
+# docker pull <image-name>
