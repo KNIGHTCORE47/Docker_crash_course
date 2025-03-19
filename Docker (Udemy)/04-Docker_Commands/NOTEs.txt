@@ -51,3 +51,32 @@
 # docker rm $(docker ps -a -q)
 # docker <container-name> prune
 # docker cp <container-name>:<container-path> <host-path>
+
+
+
+
+# Docker Image - [Docker Commands]
+
+    - Show all images
+    - Show all images with tags
+    - Show all images with tags and IDs
+    - Show all images with IDs
+    - Show all images with IDs and tags
+    - Remove an image
+    - Remove all images
+    - Remove all images and containers
+    - Remove all images and containers and volumes
+    - Remove all images and containers and volumes and networks
+
+
+# docker images
+# docker images -a
+# docker images -a -q
+# docker rmi <image-name>
+# docker rmi -f <image-name>
+# docker rmi $(docker images -a -q)
+# docker system prune
+# docker system prune -a
+# docker system prune -a -f
+# docker system prune -a -f --volumes
+# docker system prune -a -f --volumes --networks
