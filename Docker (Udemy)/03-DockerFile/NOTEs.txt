@@ -1,0 +1,28 @@
+# File Dockerization
+
+# NOTE - Dockerfile [The ordered fashion of Steps to build an Docker image matters, otherwise the docker image will be corrupted, will take massive storage to build the image]
+
+# FROM
+# WORKDIR
+# MAINTAINER
+# RUN
+# ADD
+# COPY
+# ENV
+# EXPOSE
+# CMD
+
+# NOTE - Terminal Commands
+
+# docker build -t <image-name> <path>
+# docker run -p <port>:<port> -it <image-name>
+
+
+# Docker Image - [Behavior]
+
+ - Immutable [Onece built, it cannot be changed, with changed name new version will be created, with same name it will be overwritten by cached layer of existing image with new changes]
+ - Light weight
+ - Portable
+ - Reproducible [version control, with re-name as <name:2> or <name:latest> etc new revamped image will be created]
+ - Secure
+ - Self contained
