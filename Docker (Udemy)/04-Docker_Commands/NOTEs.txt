@@ -1,0 +1,53 @@
+# Docker
+
+# NOTE - Modes
+    - Detached Mode [-d]
+    - Interactive Mode [-it]
+    - Name of the image [--name <container-name>]
+    - Port Mapping [-p <host-port>:<container-port>]
+    - Load Host machine folder to Container (volume) [-v <host-path>:<container-path>]
+
+[Terminal Commands]
+
+# docker run <image-name>
+# docker run -d <image-name>
+# docker run --name <container-name> <image-name>
+# docker run -it <image-name> /bin/bash
+# docker run -it <image-name> sh
+# docker run --name <container-name> <image-name>
+# docker run -p <host-port>:<container-port> <image-name>
+# docker run -v <host-path>:<container-path> <image-name>
+
+
+
+
+# Docker Container - [Docker Commands]
+
+    - Show all running containers
+    - Show all containers[running and stopped]
+    - Show docker container logs
+    - Connect host terminal to docker container [get inside the container]
+    - Stop a running container
+    - Kill a stuck container
+    - Stop all active/running containers
+    - Restart a stopped container
+    - Remove a stopped container
+    - Remove a bugged/busy container
+    - Remove all stopped containers
+    - Destroy all stopped containers entirely
+    - Copy files from container to host
+
+
+# docker ps
+# docker ps -a
+# docker logs <container-name>
+# docker attach <container-name>
+# docker stop <container-name>
+# docker kill <container-name>
+# docker stop $(docker ps -q)
+# docker start <container-name>
+# docker rm <container-name>
+# docker rm -f <container-name>
+# docker rm $(docker ps -a -q)
+# docker <container-name> prune
+# docker cp <container-name>:<container-path> <host-path>
