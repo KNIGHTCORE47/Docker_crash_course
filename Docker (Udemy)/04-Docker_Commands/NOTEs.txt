@@ -6,6 +6,7 @@
     - Name of the image [--name <container-name>]
     - Port Mapping [-p <host-port>:<container-port>]
     - Load Host machine folder to Container (volume) [-v <host-path>:<container-path>]
+    - Tag a container [-t <container-name> <image-name>]
 
 [Terminal Commands]
 
@@ -17,6 +18,8 @@
 # docker run --name <container-name> <image-name>
 # docker run -p <host-port>:<container-port> <image-name>
 # docker run -v <host-path>:<container-path> <image-name>
+# docker run -t <container-name> <image-name>
+
 
 
 
