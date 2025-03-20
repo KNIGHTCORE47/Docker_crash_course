@@ -1,0 +1,30 @@
+# File Dockerization [Multistage]
+
+# NOTE - Dockerfile [The ordered fashion of Steps to build an Docker image matters, otherwise the docker image will be corrupted, will take massive storage to build the image]
+
+# NOTE - Stages [Multistage Dockerfile is used to build an image in multiple steps as it will build an image in multiple layers consuming less storage build minimum sized docker image]
+
+# FROM <image-name> AS <stage-name>
+# WORKDIR
+# MAINTAINER
+# RUN
+# ADD
+# COPY
+
+
+
+
+# FROM
+# WORKDIR
+# MAINTAINER
+# COPY --from=<stage-name> /app /app
+# ENV
+# EXPOSE
+# CMD
+
+# NOTE - Terminal Commands
+
+# docker build -t <image-name> <path>
+# docker run -p <host-port>:<container-port> -it <image-name>
+# docker run -p <host-port>:<container-port> -e <env-name>=<env-value> -it <image-name>
+# docker run -p <host-port>:<container-port> --env-file <env-file-path> -it <image-name>
