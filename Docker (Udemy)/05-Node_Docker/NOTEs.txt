@@ -1,0 +1,20 @@
+# File Dockerization
+
+# NOTE - Dockerfile [The ordered fashion of Steps to build an Docker image matters, otherwise the docker image will be corrupted, will take massive storage to build the image]
+
+# FROM
+# WORKDIR
+# MAINTAINER
+# RUN
+# ADD
+# COPY
+# ENV
+# EXPOSE
+# CMD
+
+# NOTE - Terminal Commands
+
+# docker build -t <image-name> <path>
+# docker run -p <host-port>:<container-port> -it <image-name>
+# docker run -p <host-port>:<container-port> -e <env-name>=<env-value> -it <image-name>
+# docker run -p <host-port>:<container-port> --env-file <env-file-path> -it <image-name>
