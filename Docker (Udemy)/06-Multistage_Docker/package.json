@@ -1,0 +1,16 @@
+{
+  "name": "05-node_docker",
+  "version": "1.0.0",
+  "description": "This is a Node Backend Docker App",
+  "license": "ISC",
+  "author": "Knightcore47",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
